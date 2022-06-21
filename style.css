@@ -1,0 +1,204 @@
+/*always comment what you are doing*/
+*{
+	/* CSS reset */
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+	font-size:16px;
+}
+
+/* CSS reset- images */
+img,
+iframe {
+	max-width: 100%;
+	height: auto;
+/* so that aspect ratio is kept even if height is declared in markup*/
+	border: 0;
+/*this stops a border if the the image is inside a link*/
+}
+
+/*styling html*/
+body {
+	font-family:'Montserrat', sans-serif;
+}
+/*some base styles for major elements*/
+/*background colour defaults
+Note that HTML and CSS use Americsn spelling (color not colour). 
+The most common way we reference colours: name: <black>, hex: <#000000> or RGB: rgb<0,0,0>, */
+body {
+	background-color: lightcyan;
+	}
+header {
+	background-color: rgba(186,230,255,1.00);
+	}
+/*note that if we want a number of different elements to have the same style, we just comma separate them.*/
+header, footer {
+	text-align: center;
+	}
+
+/*TYPOGRAPHY*/
+h1 {
+	font-size:50px;
+	color: #FFFBE8;
+	text-transform: uppercase;
+	}
+h2 {
+	font-size:28px;
+	color: #3367A6;
+	font-family: 'Lato', sans-serif;
+	text-transform: uppercase;
+	}
+h3 {
+	color: #3B76B8;
+	}
+p, li {
+	color: #CDEAFF;
+	}
+h1,h2,p,li {
+	padding-bottom: 1em;
+			}
+
+/*Highlighting content*/
+.item {
+	background-color: rgba(182,213,255,0.56);
+	padding:1%;
+	margin:1%;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	border-radius: 10px;
+}
+
+main {
+/*there's rarely any time you should set an explicit width. always use max-width whenever possible.*/
+	max-width: 1000px;
+/*change to 1000px and see what happens with the responsive*/
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*styling unordered list*/
+.item li{
+	margin-left: 25px;
+}
+blockquote {
+	text-transform:uppercase;
+	font-style: italic;
+}
+
+/*styling the navigation*/
+nav{
+	text-align: center;
+}
+nav li {
+	display: inline-block;
+}
+/* nav li a, or nav a ?? */
+nav a {
+	background: aliceblue;/*button colour*/
+	color: black;/*text colour*/
+	padding: 5px;
+	text-decoration: none;
+	border-radius: 5px;
+}
+/*when you hover over the buttons at the top, they will change to this colour*/
+nav a:hover {
+	background: #FFDFAA;
+}
+body {
+	background-color: lightcyan;
+	background-image: url(skyBG.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	/*note the background will turn to background-colour if no image is displayed.*/
+}
+
+
+/*for the form on the feedback page*/
+input[type=text], select {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing:border-box;
+}
+
+input[type=submit] {
+	width: 100%;
+	background-color: #BBDEFF;
+	colour: #DCF1FF;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+	
+	input[type=submit]:hover {
+		background-color: #FFE3A5;
+}
+	
+	div {
+		border-radius: 5px;
+		background-color: #f2f2f2;
+		padding: 20px;
+}
+
+
+/* mEdia Query- Responsive*/
+@media screen and (min-width: 500px){
+	body{
+		background-color: skyblue;
+		font-family: 'Montserrat', sans-serif;
+	}
+
+.item{
+	background-color: rgba(182,213,255,0.56);
+	}
+h2{
+	font-family: 'arial', regular;	
+	}
+}
+
+@media screen and (min-width: 768px){
+	body{
+		background-color: lightblue;
+		background-image: url("skyBG.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	.item {
+		width: 31.3%;
+		background-color: rgba(162,217,241,0.51); float: left;
+	}
+	footer{
+		color: white;
+		clear: both;
+	}
+}
+
+
+/*descriptor section*/
+.processsect{
+	position: relative;
+	border-radius: 0;
+	text-align: center;
+	background:#A6D5FF;
+}
+
+/*rounding images*/
+img {
+	border-radius: 5%;
+}
+
+
+/*link colour, part below affects hover*/
+a {
+    color: #CEF2FF;
+    text-decoration: none;
+}
+
+a hover {
+	cursor: pointer;
+}
