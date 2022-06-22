@@ -95,7 +95,7 @@ nav li {
 /* nav li a, or nav a ?? */
 nav a {
 	background: aliceblue;/*button colour*/
-	color: black;/*text colour*/
+	color: #6BA2C4;/*text colour*/
 	padding: 5px;
 	text-decoration: none;
 	border-radius: 5px;
